@@ -1,0 +1,293 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F1DFD3;
+    height: 100%;
+    color: white;
+    display: block;
+    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+    font-size: 100%;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+hr {
+    border: 4px solid #5f2c32;
+    color: #5f2c32;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+
+h1 {
+    font-weight: 300;
+    margin: 5px 0 0;
+    font-size: 40px;
+    color: #5f2c32; /*	skills  */
+    padding: 0 10px 10px;
+    border-radius: 2px;
+    font-family: lora;
+}
+h2 {
+    color: #5f2c32;
+    width: 150px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-family: lora;
+}
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 28px;
+    font-family: lora;
+    color: #5f2c32;
+}
+
+
+
+
+.header {
+    padding: 4px;
+    background: #5f2c32;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
+
+a {
+    color: #5f2c32;
+    font-size: 26px;
+    text-decoration: none;
+    font-family: lora;
+}
+
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 7px;
+}
+
+    nav section {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+        nav section a {
+            padding: 56px;
+        }
+
+    nav a:hover {
+        color: #ff0547;
+        transition: 0.3s;
+    }
+
+.logo {
+    font-size: 90px;
+    color: #5f2c32;
+    margin: 30px 50px;
+    font-family: Mioge;
+}
+
+
+h2, h3 { }
+a {
+    color: #5f2c32;
+    font-size: 25px;
+    text-decoration: none;
+    font-family: lora;
+}
+    a:hover {
+        color: #ff0547;
+    }
+.key:first-child { margin-left: 0 }
+.key {
+    margin: 0 10px;
+    position: relative;
+    color: #5f2c32;
+}
+    .key::before {
+        content: '◆';
+        position: absolute;
+        left: -15px;
+        color: #5f2c32;
+        font-size: 7pt;
+    }
+.key:first-child::before { content: '' }
+.section { border-bottom: 1px solid #ddd;
+           padding: 10px 0 15px;
+}
+.section:last-child { border: none }
+.section-text { width: 80%;
+                font-size: 18px;
+                line-height: 24px;
+                margin: 10px 0 10px;
+                padding: 0 10px;
+}
+.subsection { margin: 10px 0 5px }
+.desc {
+    font-size: 16px;
+    font-family: lora;
+    color: #5f2c32;
+}
+.contact-info { font-size: 16px;
+                text-align: right;
+}
+.light {
+    letter-spacing: 1px; /*	dates and years  */
+    font-size: 14px;
+    line-height: 28px;
+    font-family: lora;
+    text-transform: uppercase;
+}
+ul {
+    padding-left: 15px;
+}
+
+    ul.skills {
+        float: left;
+        width: 30%;
+        padding-left: 0px;
+        margin: 0 20px 0 0;
+    }
+
+ul.skills li{
+  list-style: none;
+  font-size:16px;
+  margin-bottom:10px;
+}
+
+ul.skills li:last-child{
+  margin:0;
+}
+
+/*
+ Float Rules
+*/
+.row:before, .row:after { content: "";
+                          display: table;
+}
+.row:after { clear: both }
+.col {
+    float: left;
+    color: #5f2c32; /*	SKILS  */
+}				/*	exp  */
+.col-right {
+    float: right;
+    color: #5f2c32;
+}
+
+/*
+ Page Rules
+*/
+.page {
+    width: 1000px;
+    min-height: 34cm;
+    margin: 1cm auto;
+    background: #f7f0eb;
+    padding: 20px 50px;
+    border-radius: 20px;
+}
+.subpage { padding: 1cm;
+           border: 1px red solid;
+           height: 297mm;
+
+}
+
+@page { size: A4;
+        margin: 0;
+}
+
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+    .page-break{
+      page-break-before: always;
+      padding-top:30px;
+    }
+
+    body { font-size: 12pt;}
+    h1 {
+        font-size: 23pt;
+    }
+
+    h2{
+      font-size:10pt;
+      width: 3cm;
+      padding-left: 10px;
+    }
+
+    h3 { font-size: 10pt; line-height:11pt}
+
+    .section-text { font-size: 9pt; line-height: 14pt; }
+
+    .light {
+        font-size: 7.5pt;
+        line-height: 12pt;
+        color: #5f2c32;
+    }
+    
+    .page { width: 21cm }
+    ul {margin:5px 0 0}
+    .section { padding: 5px 0 8px }
+    .section-text { width: 15cm; margin: 5px 0 5px;}
+    .subsection { margin: 5px 0 0 }
+    .desc { font-size: 9pt }
+    
+    .contact-info { font-size: 9pt}
+    
+    ul.skills{margin: 0 10px 0 0;}
+    ul.skills li{ font-size: 9pt; margin-bottom:0}
+
+}
+
+
+@font-face {
+    font-family: 'Mioge';
+    src: url('fonts/MartinDemoRegular-BWggG.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('fonts/bodoni.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bold';
+    src: url('fonts/bold.ttf') format('opentype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'lora';
+    src: url('fonts/lora.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+.extraSpace {
+    padding-bottom: 60px;
+}

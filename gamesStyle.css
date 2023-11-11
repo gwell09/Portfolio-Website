@@ -1,0 +1,484 @@
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #F1DFD3;
+    height: 100%;
+    color: white;
+    display: block;
+    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+    font-size: 100%;
+    padding-bottom: 20px;
+    height: 100%;
+}
+
+hr {
+    border: 4px solid #5f2c32;
+    color: #5f2c32;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+h1 {
+    color: #5f2c32;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    font-family: mioge;
+    font-size: 40px;
+    padding: 15px 0px 15px
+}
+
+
+
+.date {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: #5f2c32;
+    font-family: bold;
+    font-size: 22px;
+    max-width: 1200px;
+    padding-bottom: 30px;
+}
+
+.idea {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #5f2c32;
+    font-family: bodoni;
+    font-size: 24px;
+    max-width: 1200px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.gameDescript {
+    display: flex;
+    justify-content: center;
+    color: #5f2c32;
+    font-family: bodoni;
+    font-size: 17px;
+    max-width: 1200px;
+    text-align: center;
+    padding-bottom: 60px;
+    width: 100%;
+    padding-left:10px;
+    padding-right:10px;
+}
+h2 {
+    width: 100%;
+    display: flex;
+    color: #5f2c32;
+    font-family: bold;
+    font-size: 24px;
+    max-width: 1200px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+h3 {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    color: #5f2c32;
+    font-family: bold;
+    font-size: 17px;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+p {
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: left;
+    color: #5f2c32;
+    font-family: bodoni;
+    font-size: 18px;
+    max-width: 1200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
+    padding: 4px;
+    background: #5f2c32;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
+a {
+    color: #5f2c32;
+    font-size: 29px;
+    text-decoration: none;
+    font-family: lora;
+}
+
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 7px;
+}
+
+    nav section {
+        list-style-type: none;
+        padding: 10px;
+    }
+
+        nav section a {
+            padding: 58px;
+        }
+
+    nav a:hover {
+        color: #ff0547;
+        transition: 0.3s;
+    }
+
+.logo {
+    font-size: 90px;
+    color: #5f2c32;
+    margin: 30px 50px;
+    font-family: Mioge;
+}
+
+.youtube_vid {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 10px 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+
+@font-face {
+    font-family: 'Mioge';
+    src: url('fonts/MartinDemoRegular-BWggG.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'bold';
+    src: url('fonts/lora.ttf') format('opentype');
+    font-weight:normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'bodoni';
+    src: url('fonts/lora.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+
+
+.row {
+    display: flex;
+}
+    .row img {
+        width: 100%;
+        max-width: 600px;
+        max-height: 300px;
+        object-fit: cover;
+        /*        opacity: 0.7;*/
+        border-radius: 8px;
+    }
+        .row img:hover {
+/*            opacity: 1;
+            transition: opacity .5s ease-in-out;*/
+            border-radius: 50px;
+            transition: border-radius .2s ease-in-out;
+        }
+
+.column {
+    flex: 10%;
+    margin: 30px 30px;
+}
+
+.selectedWork {
+    flex: 10%;
+    margin: 50px 20px;
+}
+
+
+.ProjectCol {
+    flex: 10%;
+    width: 100%;
+}
+
+.ProjectRow {
+    display: flex;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+    .ProjectRow img {
+        align-content: center;
+        cursor: pointer;
+        width: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 8px;
+    }
+
+    .ProjectRow img:hover {
+
+    }
+
+
+.collectBtn {
+    border: 2px solid black;
+    font-family: bold;
+    background: url(/images/projects/green1.png) no-repeat;
+    padding: 14px 28px;
+    font-size: 22px;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+}
+
+
+.btn {
+    border: 2px solid black;
+    font-family: lora;
+    background-color: #F1DFD3;
+    padding: 14px 28px;
+    font-size: 22px;
+    cursor: pointer;
+    justify-content: center;
+    border-radius: 5px;
+    color: white;
+}
+
+.danger {
+    border-color: #5f2c32;
+    border-width: 2.5px;
+    margin-right: 20px;
+    color: #5f2c32;
+}
+
+    .danger:hover {
+        background: #5f2c32;
+        color: #F1DFD3;
+        transition: .2s ease-in-out;
+    }
+
+.flex-parent {
+    display: flex;
+}
+
+.jc-center {
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.extraSpace {
+    padding-bottom: 60px;
+}
+
+.aboutText {
+    color: #5c293c;
+    font-size: 9px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: bodoni;
+    width: 100%;
+    max-width: 900px;
+    padding: 10px 20px;
+}
+
+.aboutImage {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    border-radius: 8px;
+    padding-top: 40px;
+    margin-right: auto;
+}
+
+.Homecontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+Homeimg {
+    max-width: 100%;
+}
+
+.Homeimage {
+    flex-basis: 40%;
+    padding: 20px 20px;
+}
+
+.Hometext {
+    font-size: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: bodoni;
+}
+
+* {
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    padding-top: 70px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 25px;
+    color: #fffdcc;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 1px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: #5f2c32;
+    }
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 10px 10px;
+    background-color: #5f2c32;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.Descript{
+    padding-top: 30px;
+    padding-bottom:50px;
+}
+
+.smallPad{
+    padding-top: 35px;
+}
+
+.smallerPad {
+    padding-top: 25px;
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    text-align: center;
+}
+
+.lightbox-image {
+    max-width: 1000px;
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-top: 10px;
+    padding: 20px 20px 20px;
+
+}
+
+.close-button {
+    color: #5f2c32;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    cursor: pointer;
+    background-color: #F1DFD3;
+    height: 40px;
+    width: 40px;
+}
+
+.card {
+    border: 3px solid #5f2c32;
+
+}
+
+.card img{
+    padding:0px;
+}
