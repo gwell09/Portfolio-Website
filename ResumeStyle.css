@@ -1,0 +1,386 @@
+﻿
+body {
+    margin: 0 auto;
+    background-color: #f2f2ed;
+    display: block;
+    box-sizing: border-box; /* The box border applies to the inside of the div and not to the outside */
+    font-size: 100%;
+    overflow-x: hidden; /* Disable horizontal scrolling */
+    width: 100%;
+}
+
+
+hr {
+    border: 4px solid #261e2e;
+    color: #261e2e;
+    width: 100%;
+    margin: 1rem auto;
+}
+
+
+h1 {
+    font-weight: 300;
+    margin: 5px 0 0;
+    font-size: 40px;
+    color: #261e2e; /*	skills  */
+    padding: 0 10px 10px;
+    border-radius: 2px;
+    font-family: Gilda;
+}
+
+h2 {
+    color: #261e2e;
+    width: 150px;
+    font-size: 20px;
+    padding-left: 20px;
+    padding-top: 12px;
+    font-weight: 700;
+    font-family: Gilda;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0;
+    line-height: 28px;
+    font-family: Gilda;
+    color: #261e2e;
+}
+
+
+
+
+.header {
+    padding: 4px;
+    color: #261e2e;
+    text-align: center;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+    margin: 20px 0px;
+    border-radius: 5px;
+}
+
+
+
+a {
+    color: #261e2e;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: Gilda;
+}
+
+
+nav {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom:50px;
+}
+
+    nav section {
+        list-style-type: none;
+    }
+
+        nav section a {
+            padding: 30px;
+        }
+
+    nav a:hover {
+        color: #d1021e;
+        transition: 0.3s;
+    }
+
+.logo {
+    font-size: 80px;
+    color: #261e2e;
+    font-family: Pixel;
+}
+
+
+h2, h3 {
+}
+
+    a:hover {
+        color: #ff0547;
+    }
+
+.key:first-child {
+    margin-left: 0
+}
+
+.key {
+    margin: 0 10px;
+    position: relative;
+    color: #261e2e;
+}
+
+    .key::before {
+        content: '◆';
+        position: absolute;
+        left: -15px;
+        color: #5f2c32;
+        font-size: 7pt;
+    }
+
+    .key:first-child::before {
+        content: ''
+    }
+
+.section {
+    border-bottom: 1px solid #261e2e;
+    ;
+    padding: 10px 0 15px;
+}
+
+    .section:last-child {
+        border: none
+    }
+
+.section-text {
+    width: 80%;
+    font-size: 18px;
+    line-height: 24px;
+    margin: 10px 0 10px;
+    padding: 0 10px;
+}
+
+.subsection {
+    margin: 10px 0 5px
+}
+
+.desc {
+    font-size: 16px;
+    font-family: Gro;
+    color: #261e2e;
+}
+
+.contact-info {
+    font-size: 16px;
+    text-align: right;
+}
+
+.light {
+    letter-spacing: 1px; /*	dates and years  */
+    font-size: 14px;
+    line-height: 28px;
+    font-family: Gro;
+    text-transform: uppercase;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+    ul.skills {
+        float: left;
+        width: 30%;
+        padding-left: 0px;
+        margin: 0 20px 0 0;
+    }
+
+        ul.skills li {
+            list-style: none;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+            ul.skills li:last-child {
+                margin: 0;
+            }
+
+/*
+ Float Rules
+*/
+.row:before, .row:after {
+    content: "";
+    display: table;
+}
+
+.row:after {
+    clear: both
+}
+
+.col {
+    float: left;
+    color: #261e2e; /*	SKILS  */
+}
+/*	exp  */
+.col-right {
+    float: right;
+    color: #261e2e;
+}
+
+/*
+ Page Rules
+*/
+.page {
+    width: 1000px;
+    min-height: 34cm;
+    margin: 1cm auto;
+    padding: 20px 50px;
+    border-radius: 5px;
+    background-color: #fcfcfa;
+}
+
+.subpage {
+    padding: 1cm;
+    height: 297mm;
+    color: #261e2e;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    .page {
+        margin: 0;
+        border: initial;
+        border-radius: initial;
+        width: initial;
+        min-height: initial;
+        box-shadow: initial;
+        background: initial;
+        page-break-after: always;
+    }
+
+    .page-break {
+        page-break-before: always;
+        padding-top: 30px;
+        color: #261e2e;
+    }
+
+    body {
+        font-size: 12pt;
+    }
+
+    h1 {
+        font-size: 23pt;
+    }
+
+    h2 {
+        font-size: 10pt;
+        width: 3cm;
+        padding-left: 10px;
+    }
+
+    h3 {
+        font-size: 10pt;
+        line-height: 11pt
+    }
+
+    .section-text {
+        font-size: 9pt;
+        line-height: 14pt;
+    }
+
+    .light {
+        font-size: 7.5pt;
+        line-height: 12pt;
+        color: #261e2e;
+    }
+
+    .page {
+        width: 21cm
+    }
+
+    ul {
+        margin: 5px 0 0
+    }
+
+    .section {
+        padding: 5px 0 8px
+    }
+
+    .section-text {
+        width: 15cm;
+        margin: 5px 0 5px;
+    }
+
+    .subsection {
+        margin: 5px 0 0
+    }
+
+    .desc {
+        font-size: 9pt
+    }
+
+    .contact-info {
+        font-size: 9pt
+    }
+
+    ul.skills {
+        margin: 0 10px 0 0;
+    }
+
+        ul.skills li {
+            font-size: 9pt;
+            margin-bottom: 0
+        }
+}
+
+
+@font-face {
+    font-family: "Gilda";
+    src: url('fonts/Gilda.ttf') format('opentype');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Pixel";
+    src: url('fonts/Pixel.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Gro";
+    src: url('fonts/Zen2.ttf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+footer {
+    background-color: #6e0007; /* Red background for the footer */
+    padding: 20px;
+    text-align: center;
+    width: 100%; /* Ensures full width */
+    position: relative; /* Make sure it stays within the document flow */
+    z-index: 1; /* Make sure it stays in the foreground */
+}
+
+.footer-content {
+    margin-bottom: 20px; /* Adds spacing between content and icons */
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: right; /* Centers the icons horizontally */
+    gap: 20px; /* Space between icons */
+    padding-right: 45px;
+    align-items: center;
+    margin-top: 5px; /* Space between the footer content and icons */
+}
+
+.social-icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Hover effect */
+}
+
+    .social-icon img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .social-icon:hover {
+        transform: scale(1.2); /* Slightly grow the icon on hover */
+        filter: brightness(1.2); /* Lighten the icon color on hover */
+    }
+
